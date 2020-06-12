@@ -1,0 +1,8 @@
+{
+  "name": "ep_author_follow",
+  "version": "0.0.1",
+  "description": "Follow an Authors contributions to a Pad",
+  "author": "John McLear <john@mclear.co.uk>",
+  "contributors": [],
+  "dependencies": {}
+}

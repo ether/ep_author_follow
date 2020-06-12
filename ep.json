@@ -1,0 +1,15 @@
+{
+    "parts": [
+        {
+            "name": "ep_author_follow",
+            "hooks": {
+                "clientVars": "ep_author_follow/index:clientVars",
+                "eejsBlock_mySettings": "ep_author_follow/index"
+            },
+            "client_hooks": {
+                "postAceInit": "ep_author_follow/static/js/follow:postAceInit",
+                "handleClientMessage_NEW_CHANGES": "ep_author_follow/static/js/follow:handleClientMessage_NEW_CHANGES"
+            }
+        }
+    ]
+}
