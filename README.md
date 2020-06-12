@@ -1,7 +1,7 @@
 ep_author_follow
 =========
 
-![Usage](https://gph.is/g/4VgoeDg)
+![Usage](https://user-images.githubusercontent.com/220864/84521458-f3188e00-accc-11ea-8f1d-c5cfa20f0e9c.gif)
 
 [![Travis (.org)](https://img.shields.io/travis/ether/ep_author_follow)](https://travis-ci.org/github/ether/ep_author_follow)
 
