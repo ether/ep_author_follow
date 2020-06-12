@@ -70,6 +70,7 @@ function settingsListeners(){
       clientVars.ep_author_follow.enableFollow = true;
       $('#options-enableFollow').prop("checked", true);
     }
+    updateFollowingUI()
   });
 
   $('#options-enableFollow').on('click', function(){
@@ -112,10 +113,22 @@ function loadSettings(){
 
 function updateFollowingUI(){
   // For each person we're following add the eye in the users list.
-  $.each(clientVars.ep_author_follow.following, function(authorId){
-    // find the authorId item..
-    var userRow = $('#otheruserstable').contents().find("[data-authorid='"+authorId+"']")
-    $(userRow).find("td > div").text("👁");
-    $(userRow).find("td > div").css({"font-size":"12px","color":"#666","line-height":"17px","padding-left":"3px"});
-  })
+  var userRows = $('#otheruserstable').contents().find("tr")
+  $.each(userRows, function(){
+    $(this).find("td > div").text("");
+  });
+  if(clientVars.ep_author_follow.followAll){
+    var userRows = $('#otheruserstable').contents().find("tr")
+    $.each(userRows, function(){
+      $(this).find("td > div").text("👁");
+      $(this).find("td > div").css({"font-size":"12px","color":"#666","line-height":"17px","padding-left":"3px"});
+    });
+  }else{
+    $.each(clientVars.ep_author_follow.following, function(authorId){
+      // find the authorId item..
+      var userRow = $('#otheruserstable').contents().find("[data-authorid='"+authorId+"']")
+      $(userRow).find("td > div").text("👁");
+      $(userRow).find("td > div").css({"font-size":"12px","color":"#666","line-height":"17px","padding-left":"3px"});
+    })
+  }
 }

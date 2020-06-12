@@ -47,4 +47,3 @@ Please submit bug reports or patches at https://github.com/ether/ep_author_follo
 ## Todo
 - [ ] Stats
 - [ ] Full test coverage
-- [ ] Follow all needs to show eye next to each user
