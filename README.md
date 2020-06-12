@@ -1,6 +1,8 @@
 ep_author_follow
 =========
 
+![Usage](https://gph.is/g/4VgoeDg)
+
 [![Travis (.org)](https://img.shields.io/travis/ether/ep_author_follow)](https://travis-ci.org/github/ether/ep_author_follow)
 
 Follow an authors contributions to a pad in real time in Etherpad.
