@@ -11,6 +11,8 @@ To follow an author click on the users icon in the user area.
 
 Followed AuthorIDs are stored in cookies so you will automatically follow them in future pads.
 
+Following of authors does not happen within 5 seconds of an edit event by the user or within 1 second of a pad being loaded.  This is to stop focus being drawn when an author is editing a pad.
+
 # Installing
 
 Option 1.
@@ -47,3 +49,4 @@ Please submit bug reports or patches at https://github.com/ether/ep_author_follo
 ## Todo
 - [ ] Stats
 - [ ] Full test coverage
+- [ ] Don't follow if currently editing

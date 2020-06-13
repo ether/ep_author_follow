@@ -4,12 +4,17 @@ var hooks = require("ep_etherpad-lite/static/js/pluginfw/hooks");
 var Changeset = require("ep_etherpad-lite/static/js/Changeset");
 
 exports.postAceInit = function(){
+  isEditingTimeout(); // updates the clientVars.ep_author_follow.isEditing value
   settingsListeners(); // enables listeners for settings
   loadSettings(); // loads settings from cookies
   appendUI(); // update the UI to show who we're following
 }
 
 exports.handleClientMessage_NEW_CHANGES = function(fnName, msg){
+
+  // This current author is editing so don't move their focus!
+  if(clientVars.ep_author_follow.isEditing) return;
+
   if(clientVars.ep_author_follow.enableFollow){
     var lineNumber = Changeset.opIterator(Changeset.unpack(msg.payload.changeset).ops).next().lines;
     var authorId = msg.payload.author;
@@ -17,6 +22,13 @@ exports.handleClientMessage_NEW_CHANGES = function(fnName, msg){
       goToLineNumber(lineNumber);
     }
   }
+}
+
+exports.handleClientMessage_ACCEPT_COMMIT = function(fnName, msg){
+  clientVars.ep_author_follow.isEditing = true;
+  clientVars.ep_author_follow.editingTimeout = setTimeout(function(){
+    clientVars.ep_author_follow.isEditing = false;  
+  }, 5000)
 }
 
 function appendUI(){
@@ -131,4 +143,12 @@ function updateFollowingUI(){
       $(userRow).find("td > div").css({"font-size":"12px","color":"#666","line-height":"17px","padding-left":"3px"});
     })
   }
+}
+
+function isEditingTimeout(){
+  // on initial initialization of pad for 1 second don't drag my focus.
+  clientVars.ep_author_follow.isEditing = true;
+  clientVars.ep_author_follow.editingTimeout = setTimeout(function(){
+    clientVars.ep_author_follow.isEditing = false;
+  }, 1000)
 }
