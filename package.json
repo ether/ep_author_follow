@@ -1,8 +1,12 @@
 {
   "name": "ep_author_follow",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Follow an Authors contributions to a Pad",
   "author": "John McLear <john@mclear.co.uk>",
   "contributors": [],
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ether/ep_author_follow.git"
+  },
 }
