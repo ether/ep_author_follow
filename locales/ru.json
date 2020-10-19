@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Megakott"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Следить за авторами",
+	"pad.settings.ep_author_follow.followAll": "Следить за всеми авторами"
+}

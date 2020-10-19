@@ -1,4 +1,7 @@
 {
-    "pad.settings.ep_author_follow.enableFollow": "Följ författare",
-    "pad.settings.ep_author_follow.followAll": "Följ samtliga författare"
+	"@metadata": {
+		"authors": []
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Följ författare",
+	"pad.settings.ep_author_follow.followAll": "Följ samtliga författare"
 }

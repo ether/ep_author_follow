@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hanna Tardos"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Szerkesztő(k) követése",
+	"pad.settings.ep_author_follow.followAll": "Az összes szerkesztő követése"
+}

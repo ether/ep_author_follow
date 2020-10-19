@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"MuratTheTurkish"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Yazar(lar)ı Takip Et",
+	"pad.settings.ep_author_follow.followAll": "Tüm Yazarları Takip Et"
+}

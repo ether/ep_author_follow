@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Следи автор(и)",
+	"pad.settings.ep_author_follow.followAll": "Следи ги сите автори"
+}
