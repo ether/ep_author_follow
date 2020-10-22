@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Suivre le(s) auteur(s)",
+	"pad.settings.ep_author_follow.followAll": "Suivre tous les auteurs"
+}
