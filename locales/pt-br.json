@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Seguir Autor(es)",
+	"pad.settings.ep_author_follow.followAll": "Seguir todos os autores"
+}
