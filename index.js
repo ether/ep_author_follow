@@ -13,34 +13,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-var log4js = require('ep_etherpad-lite/node_modules/log4js')
-var statsLogger = log4js.getLogger("stats");
-var eejs = require('ep_etherpad-lite/node/eejs/');
-var settings = require('ep_etherpad-lite/node/utils/Settings');
-var stats = require('ep_etherpad-lite/node/stats')
+const log4js = require('ep_etherpad-lite/node_modules/log4js');
+const statsLogger = log4js.getLogger('stats');
+const eejs = require('ep_etherpad-lite/node/eejs/');
+const settings = require('ep_etherpad-lite/node/utils/Settings');
+const stats = require('ep_etherpad-lite/node/stats');
 
-exports.clientVars = function(hook, context, callback)
-{
-  if(!settings.ep_author_follow) settings.ep_author_follow = {};
+exports.clientVars = function (hook, context, callback) {
+  if (!settings.ep_author_follow) settings.ep_author_follow = {};
   return callback({
     ep_author_follow: {
       followAll: settings.ep_author_follow.followAll || false,
-      enableFollow: settings.ep_author_follow.enableFollow || true
-    }
+      enableFollow: settings.ep_author_follow.enableFollow || true,
+    },
   });
 };
 
-exports.eejsBlock_mySettings = function (hook, context, callback)
-{
-  if(!settings.ep_author_follow) settings.ep_author_follow = {};
+exports.eejsBlock_mySettings = function (hook, context, callback) {
+  if (!settings.ep_author_follow) settings.ep_author_follow = {};
   context.content += eejs.require('ep_author_follow/templates/settings.ejs', {
-    followAll : settings.ep_author_follow.followAll || false,
-    enableFollow : settings.ep_author_follow.enableFollow || true
+    followAll: settings.ep_author_follow.followAll || false,
+    enableFollow: settings.ep_author_follow.enableFollow || true,
   });
   callback();
 };
 
 exports.eejsBlock_styles = function (hook_name, args, cb) {
-  args.content = args.content + eejs.require("ep_author_follow/templates/styles.html", {}, module);
+  args.content += eejs.require('ep_author_follow/templates/styles.html', {}, module);
   return cb();
 };
