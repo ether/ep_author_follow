@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"YaronSh"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "לעקוב אחר יוצרים",
+	"pad.settings.ep_author_follow.followAll": "לעקוב אחר כל היוצרים"
+}
