@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mguix"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Segueix Autor(s)",
+	"pad.settings.ep_author_follow.followAll": "Seguir Tots els  Autors"
+}
