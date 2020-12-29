@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Maantietäjä"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Seuraa kirjailijoita",
+	"pad.settings.ep_author_follow.followAll": "Seuraa kaikkia kirjailijoita"
+}
