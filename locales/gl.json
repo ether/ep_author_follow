@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ghose"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Seguir Autora(s)",
+	"pad.settings.ep_author_follow.followAll": "Seguir a tódalas autoras"
+}

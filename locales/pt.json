@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Guilha"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Seguir autor(es)",
+	"pad.settings.ep_author_follow.followAll": "Seguir todos os autores"
+}
