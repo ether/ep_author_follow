@@ -1,3 +1,5 @@
+'use strict';
+
 describe('enable and disable author follow', function () {
   beforeEach(function (cb) {
     // Make sure webrtc is disabled, and reload with the firefox fake webrtc pref
@@ -15,7 +17,8 @@ describe('enable and disable author follow', function () {
 
     expect($cb.prop('checked')).to.be(false);
 
-    helper.waitFor(() => chrome$.window.clientVars.ep_author_follow.enableFollow === false, 1000).done(done);
+    helper.waitFor(
+        () => chrome$.window.clientVars.ep_author_follow.enableFollow === false, 1000).done(done);
   });
 
   it('enables author follow if the user uses the checkbox', function (done) {
@@ -27,6 +30,7 @@ describe('enable and disable author follow', function () {
     $cb.click();
     expect($cb.prop('checked')).to.be(true);
 
-    helper.waitFor(() => chrome$.window.clientVars.ep_author_follow.enableFollow === true, 1000).done(done);
+    helper.waitFor(
+        () => chrome$.window.clientVars.ep_author_follow.enableFollow === true, 1000).done(done);
   });
 });

@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Copyright 2020 John McLear <john@mclear.co.uk>
  *
@@ -13,13 +15,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-const log4js = require('ep_etherpad-lite/node_modules/log4js');
-const statsLogger = log4js.getLogger('stats');
 const eejs = require('ep_etherpad-lite/node/eejs/');
 const settings = require('ep_etherpad-lite/node/utils/Settings');
-const stats = require('ep_etherpad-lite/node/stats');
 
-exports.clientVars = function (hook, context, callback) {
+exports.clientVars = (hook, context, callback) => {
   if (!settings.ep_author_follow) settings.ep_author_follow = {};
   return callback({
     ep_author_follow: {
@@ -29,7 +28,7 @@ exports.clientVars = function (hook, context, callback) {
   });
 };
 
-exports.eejsBlock_mySettings = function (hook, context, callback) {
+exports.eejsBlock_mySettings = (hook, context, callback) => {
   if (!settings.ep_author_follow) settings.ep_author_follow = {};
   context.content += eejs.require('ep_author_follow/templates/settings.ejs', {
     followAll: settings.ep_author_follow.followAll || false,
@@ -38,7 +37,7 @@ exports.eejsBlock_mySettings = function (hook, context, callback) {
   callback();
 };
 
-exports.eejsBlock_styles = function (hook_name, args, cb) {
+exports.eejsBlock_styles = (hookName, args, cb) => {
   args.content += eejs.require('ep_author_follow/templates/styles.html', {}, module);
   return cb();
 };
