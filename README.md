@@ -1,6 +1,5 @@
-![Publish Status](https://github.com/ether/ep_author_follow/workflows/Node.js%20Package/badge.svg) ![Publish Status](https://github.com/ether/ep_author_follow/workflows/Node.js%20Package/badge.svg)
-ep_author_follow
-=========
+
+# Author Follow / Track Etherpad plugin
 
 ![Usage](https://user-images.githubusercontent.com/220864/84521458-f3188e00-accc-11ea-8f1d-c5cfa20f0e9c.gif)
 
