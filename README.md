@@ -1,3 +1,5 @@
+![Publish Status](https://github.com/ether/ep_author_follow/workflows/Node.js%20Package/badge.svg) ![Backend Tests Status](https://github.com/ether/ep_author_follow/workflows/Backend%20tests/badge.svg)
+
 
 # Author Follow / Track Etherpad plugin
 
