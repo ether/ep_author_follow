@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Spotter"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Sledovat autory",
+	"pad.settings.ep_author_follow.followAll": "Sledujte všechny autory"
+}
