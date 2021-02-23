@@ -40,7 +40,6 @@ const appendUI = () => {
       $(this).find('td > div').text('');
       unfollow(authorId);
     } else {
-      console.log("follow");
       follow(authorId);
       $(this).find('td > div').text('👁');
       $(this).find('td > div').css(
