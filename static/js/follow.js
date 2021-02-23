@@ -33,13 +33,14 @@ exports.handleClientMessage_ACCEPT_COMMIT = (fnName, msg) => {
 };
 
 const appendUI = () => {
-  $('body').on('click', '#otheruserstable > tbody > tr', () => {
+  $('body').on('click', '#otheruserstable > tbody > tr', function () {
     // already watching so stop watching
     const authorId = $(this).data('authorid');
     if (clientVars.ep_author_follow.following[authorId]) {
       $(this).find('td > div').text('');
       unfollow(authorId);
     } else {
+      console.log("follow");
       follow(authorId);
       $(this).find('td > div').text('👁');
       $(this).find('td > div').css(
