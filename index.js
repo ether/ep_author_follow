@@ -20,19 +20,32 @@ const settings = require('ep_etherpad-lite/node/utils/Settings');
 
 exports.clientVars = (hook, context, callback) => {
   if (!settings.ep_author_follow) settings.ep_author_follow = {};
-  return callback({
+  if (typeof settings.ep_author_follow.followAll === 'undefined') {
+    settings.ep_author_follow.followAll = true;
+  }
+  if (typeof settings.ep_author_follow.enableFollow === 'undefined') {
+    settings.ep_author_follow.enableFollow = true;
+  }
+
+  callback({
     ep_author_follow: {
-      followAll: settings.ep_author_follow.followAll || false,
-      enableFollow: settings.ep_author_follow.enableFollow || true,
+      followAll: settings.ep_author_follow.followAll,
+      enableFollow: settings.ep_author_follow.enableFollow,
     },
   });
 };
 
 exports.eejsBlock_mySettings = (hook, context, callback) => {
   if (!settings.ep_author_follow) settings.ep_author_follow = {};
+  if (typeof settings.ep_author_follow.followAll === 'undefined') {
+    settings.ep_author_follow.followAll = true;
+  }
+  if (typeof settings.ep_author_follow.enableFollow === 'undefined') {
+    settings.ep_author_follow.enableFollow = true;
+  }
   context.content += eejs.require('ep_author_follow/templates/settings.ejs', {
-    followAll: settings.ep_author_follow.followAll || false,
-    enableFollow: settings.ep_author_follow.enableFollow || true,
+    followAll: settings.ep_author_follow.followAll,
+    enableFollow: settings.ep_author_follow.enableFollow,
   });
   callback();
 };
