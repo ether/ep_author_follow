@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yardom78"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Sledovať autorov",
+	"pad.settings.ep_author_follow.followAll": "Sledovať všetkých autorov"
+}
