@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Umlaut"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Autor(en) folgen",
+	"pad.settings.ep_author_follow.followAll": "Allen Autoren folgen"
+}
