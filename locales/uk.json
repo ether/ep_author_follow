@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Підписатися на авторів",
+	"pad.settings.ep_author_follow.followAll": "Слідуйте всім авторам"
+}
