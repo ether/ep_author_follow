@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Greatder"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "লেখকদের অনুসরণ",
+	"pad.settings.ep_author_follow.followAll": "সব লেখকদের অনুসরণ"
+}
