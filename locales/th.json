@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andibecker"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "ติดตามผู้เขียน",
+	"pad.settings.ep_author_follow.followAll": "ติดตามผู้เขียนทั้งหมด"
+}
