@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"列维劳德"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "关注作者",
+	"pad.settings.ep_author_follow.followAll": "关注所有作者"
+}
