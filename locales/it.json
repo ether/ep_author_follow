@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Segui autore/i",
+	"pad.settings.ep_author_follow.followAll": "Segui tutti gli autori"
+}
