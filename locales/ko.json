@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"그냥기여자"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "작성자 팔로우",
+	"pad.settings.ep_author_follow.followAll": "모든 작성자 팔로우"
+}
