@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"DDPAT"
+			"DDPAT",
+			"Ice bulldog"
 		]
 	},
 	"pad.settings.ep_author_follow.enableFollow": "Підписатися на авторів",
