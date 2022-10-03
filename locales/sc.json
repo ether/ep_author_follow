@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Adr mm"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Sighi autore/-s",
+	"pad.settings.ep_author_follow.followAll": "Sighi totu is autores"
+}
