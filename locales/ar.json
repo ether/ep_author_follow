@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "اتبع المؤلف (المؤلفين)",
+	"pad.settings.ep_author_follow.followAll": "اتبع جميع المؤلفين"
+}
