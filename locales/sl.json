@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Sledenje avtorju(-jem)",
+	"pad.settings.ep_author_follow.followAll": "Sledenje vsem avtorjem"
+}
