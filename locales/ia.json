@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Sequer autor(es)",
+	"pad.settings.ep_author_follow.followAll": "Sequer tote le autores"
+}
