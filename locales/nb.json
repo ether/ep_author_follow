@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Følg forfatter(e)",
+	"pad.settings.ep_author_follow.followAll": "Følg alle forfattere"
+}
