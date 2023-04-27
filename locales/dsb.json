@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Awtoram slědowaś",
+	"pad.settings.ep_author_follow.followAll": "Wšym awtoram slědowaś"
+}
