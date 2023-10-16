@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Stebėti autorių (-us)",
+	"pad.settings.ep_author_follow.followAll": "Stebėti visus autorius"
+}
