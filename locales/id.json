@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Atriwidada"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Ikuti Penulis",
+	"pad.settings.ep_author_follow.followAll": "Ikuti Semua Penulis"
+}
