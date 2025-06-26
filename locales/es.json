@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ovruni"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Seguir al autor(es)",
+	"pad.settings.ep_author_follow.followAll": "Seguir a todos los autores"
+}
