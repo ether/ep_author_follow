@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Usagi.02808"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "Obserwuj autora(ów)",
+	"pad.settings.ep_author_follow.followAll": "Obserwuj wszystkich autorów"
+}
