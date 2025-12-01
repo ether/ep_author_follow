@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"बडा काजी"
+		]
+	},
+	"pad.settings.ep_author_follow.enableFollow": "लेखकलाई पछ्याउनुहोस्",
+	"pad.settings.ep_author_follow.followAll": "सबै लेखकहरूलाई पछ्याउनुहोस्"
+}
