@@ -1,6 +1,6 @@
 {
   "name": "ep_author_follow",
-  "version": "0.1.45",
+  "version": "0.1.46",
   "description": "Follow an Authors contributions to a Pad",
   "author": "John McLear <john@mclear.co.uk>",
   "contributors": [],
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "eslint": "^8.57.0",
-    "eslint-config-etherpad": "^3.0.22",
+    "eslint-config-etherpad": "^4.0.4",
     "typescript": "^5.4.2"
   },
   "scripts": {
