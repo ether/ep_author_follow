@@ -23,7 +23,7 @@ Use the ``/admin`` interface, search for ``ep_author_follow`` and click Install
 
 Option 2.
 ```
-npm install ep_author_follow
+pnpm run plugins install ep_author_follow
 ```
 Option 3.
 ```
