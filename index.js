@@ -1,5 +1,7 @@
 'use strict';
 
+const {template} = require('ep_plugin_helpers');
+
 /**
  * Copyright 2020 John McLear <john@mclear.co.uk>
  *
@@ -50,7 +52,5 @@ exports.eejsBlock_mySettings = (hook, context, callback) => {
   callback();
 };
 
-exports.eejsBlock_styles = (hookName, args, cb) => {
-  args.content += eejs.require('ep_author_follow/templates/styles.html', {}, module);
-  return cb();
-};
+exports.eejsBlock_styles =
+    template('ep_author_follow/templates/styles.html');
