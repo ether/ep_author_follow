@@ -17,40 +17,28 @@ const {template} = require('ep_plugin_helpers');
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-const eejs = require('ep_etherpad-lite/node/eejs/');
 const settings = require('ep_etherpad-lite/node/utils/Settings');
 
+// Single source of truth for the runtime configuration: defaults applied
+// once on first read so both the client-vars hook and the settings template
+// see the same values.
+const getConfig = () => {
+  const cfg = settings.ep_author_follow ||= {};
+  if (typeof cfg.followAll === 'undefined') cfg.followAll = true;
+  if (typeof cfg.enableFollow === 'undefined') cfg.enableFollow = true;
+  return cfg;
+};
+
 exports.clientVars = (hook, context, callback) => {
-  if (!settings.ep_author_follow) settings.ep_author_follow = {};
-  if (typeof settings.ep_author_follow.followAll === 'undefined') {
-    settings.ep_author_follow.followAll = true;
-  }
-  if (typeof settings.ep_author_follow.enableFollow === 'undefined') {
-    settings.ep_author_follow.enableFollow = true;
-  }
-
-  callback({
-    ep_author_follow: {
-      followAll: settings.ep_author_follow.followAll,
-      enableFollow: settings.ep_author_follow.enableFollow,
-    },
-  });
+  const {followAll, enableFollow} = getConfig();
+  callback({ep_author_follow: {followAll, enableFollow}});
 };
 
-exports.eejsBlock_mySettings = (hook, context, callback) => {
-  if (!settings.ep_author_follow) settings.ep_author_follow = {};
-  if (typeof settings.ep_author_follow.followAll === 'undefined') {
-    settings.ep_author_follow.followAll = true;
-  }
-  if (typeof settings.ep_author_follow.enableFollow === 'undefined') {
-    settings.ep_author_follow.enableFollow = true;
-  }
-  context.content += eejs.require('ep_author_follow/templates/settings.ejs', {
-    followAll: settings.ep_author_follow.followAll,
-    enableFollow: settings.ep_author_follow.enableFollow,
-  });
-  callback();
-};
+exports.eejsBlock_mySettings = template('ep_author_follow/templates/settings.ejs', {
+  vars: () => {
+    const {followAll, enableFollow} = getConfig();
+    return {followAll, enableFollow};
+  },
+});
 
-exports.eejsBlock_styles =
-    template('ep_author_follow/templates/styles.html');
+exports.eejsBlock_styles = template('ep_author_follow/templates/styles.html');
