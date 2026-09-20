@@ -23,7 +23,8 @@ const settings = require('ep_etherpad-lite/node/utils/Settings');
 // once on first read so both the client-vars hook and the settings template
 // see the same values.
 const getConfig = () => {
-  const cfg = settings.ep_author_follow ||= {};
+  if (!settings.ep_author_follow) settings.ep_author_follow = {};
+  const cfg = settings.ep_author_follow;
   if (typeof cfg.followAll === 'undefined') cfg.followAll = true;
   if (typeof cfg.enableFollow === 'undefined') cfg.enableFollow = true;
   return cfg;
